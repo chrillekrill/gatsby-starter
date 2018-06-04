@@ -8,7 +8,7 @@ export const FruitsPageTemplate = ({
   image,
   title,
   heading,
-  test
+  test,
   description,
   intro,
   main,
@@ -111,6 +111,7 @@ FruitsPageTemplate.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   heading: PropTypes.string,
+  test: ProtoTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -138,8 +139,8 @@ const FruitsPage = ({ data }) => {
     <FruitsPageTemplate
       image={frontmatter.image}
       title={frontmatter.title}
-      heading={frontmatter.heading}
       test={frontmatter.test}
+      heading={frontmatter.heading}
       description={frontmatter.description}
       intro={frontmatter.intro}
       main={frontmatter.main}
