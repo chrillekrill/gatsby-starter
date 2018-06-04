@@ -111,7 +111,7 @@ FruitsPageTemplate.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   heading: PropTypes.string,
-  test: ProtoTypes.string,
+  test: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
