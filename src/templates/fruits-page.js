@@ -110,7 +110,6 @@ export const FruitsPageTemplate = ({
 FruitsPageTemplate.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
-  test: ProtoTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
