@@ -8,6 +8,7 @@ export const FruitsPageTemplate = ({
   image,
   title,
   heading,
+  test
   description,
   intro,
   main,
@@ -35,6 +36,7 @@ export const FruitsPageTemplate = ({
                   }}
                 >
                   {title}
+                  {test}
                 </h2>
               </div>
               <div className="columns">
@@ -108,6 +110,7 @@ export const FruitsPageTemplate = ({
 FruitsPageTemplate.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
+  test: ProtoTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -137,6 +140,7 @@ const FruitsPage = ({ data }) => {
       image={frontmatter.image}
       title={frontmatter.title}
       heading={frontmatter.heading}
+      test={frontmatter.test}
       description={frontmatter.description}
       intro={frontmatter.intro}
       main={frontmatter.main}
@@ -164,6 +168,7 @@ export const FruitsPageQuery = graphql`
         title
         image
         heading
+        test
         description
         intro {
           blurbs {
