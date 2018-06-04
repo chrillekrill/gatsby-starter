@@ -1,7 +1,7 @@
 ---
 templateKey: 'fruits-page'
 path: /fruits
-title: Our Coffee
+title: Our Fruits
 image: /img/jumbotron.jpg
 heading: What we offer
 description: >-
